@@ -3,15 +3,15 @@ from django.http import HttpResponse
 
 # Create your views here.
 
-def hello_msg(request):
+def home(request):
     """
     Send message through HTTPResponse
     """
     return HttpResponse("Hello Zecpath Backend (Using HttpResponse)")
 
 
-def hello_msg_template(request):
+def home_template(request):
     """
     Send a message using templates
     """
-    return render(request,'core/index.html')
+    return render(request,'core/home.html')
